@@ -1,12 +1,35 @@
 \version "2.18.2"
 \language "english"
 
+% first, define a variable to hold the formatted date:
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
+
 %% additional definitions required by the score:
 otherdynamics = #(make-dynamic-script "other-dynamics")
 
 \header {
-    encodingdate = "2019-06-28"
+    encodingdate = \date
+    title = "Do you hear the people sing?"
+    composer = "David Burt, The Original London Cast of Les Misérables"
+    piece = "Les Misérables"
 }
+
+\paper {
+        oddHeaderMarkup = \markup {
+            \fill-line
+            {
+              \on-the-fly #not-first-page \fromproperty #'page:page-number-string
+%% left
+              \on-the-fly #not-first-page \fontsize #-1 \bold \fromproperty #'header:title
+%% center
+              ""
+%% right
+             }
+        }
+
+        evenHeaderMarkup = \oddHeaderMarkup
+}
+
 
 global = {
   \key d \minor
@@ -25,11 +48,11 @@ global = {
   \key c \major
 
   s1*28 | \barNumberCheck #39
-  
+
   \tempo "A little slower" 4=76
-  
+
   s1*12
-  
+
   \bar "|."
 }
 
@@ -69,7 +92,7 @@ sopMusic = \relative f' {
   e8. g16 c8. e16 d8. cs16 d8. a16 |
   c!8. b16 b8. c16 d8 r e8. d16 |
   c8. d16 e8. f16 g4 \tuplet 3/2 {e8 d c} |
-  b8. a16 b8. c16 g4 \tuplet 3/2 {a8 g f} |  
+  b8. a16 b8. c16 g4 \tuplet 3/2 {a8 g f} |
   e8. g16 c8. e16 \tuplet 3/2 {d8 cs d} f8. b,16 |
   c!2. r4 |
   d1 |
@@ -140,7 +163,7 @@ altoMusic = \relative f' {
   e8. g16 c8. d16 e4 \tuplet 3/2 {c8 g e} |
   g8. f16 g8. a16 e4 \tuplet 3/2 {f8 e d} |
   c8. d16 e8. g16 \tuplet 3/2 {a8 a a} b8. f16 |
-  e2 r4^"slight rit." c'8.^\ff g16 | 
+  e2 r4^"slight rit." c'8.^\ff g16 |
   e8. g16 c8. d16 e4 \tuplet 3/2 {c8 g e} |
   g8. f16 g8. a16 e4 \tuplet 3/2 {f8 e d} | \barNumberCheck #41
   c8. d16 e8. g16 fs8. e16 fs8. fs16 |
@@ -148,7 +171,7 @@ altoMusic = \relative f' {
   e8. g16 c8. d16 e4 \tuplet 3/2 {c8 g e} |
   g8. f16 g8. a16 e4 \tuplet 3/2 {f8 e d} |
   c8. d16 e8. g16 \tuplet 3/2 {a8 a a} b8. f16 |
-  e2. r4 |  
+  e2. r4 |
   bf'1 |
   a |
   af2^"molto rall." r8 d-- d-- e-- |
@@ -376,5 +399,4 @@ pBassMusic = \relative f {
       >>
     }
  >>
- \midi { }
 }
