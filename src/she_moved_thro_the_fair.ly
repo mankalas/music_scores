@@ -123,7 +123,7 @@ soloWords = \lyricmode {
 
 }
 
-rightHand = \relative f' {
+rightHandUp = \relative f' {
  \tuplet 3/2 { <d b>8( <e c> <fs d> } |
  <g e c>4_"legato" <fs d b> <g e c> <a fs d>2.~) |
  <a fs d>2 <g d b>8 <e c g> <c g e>4 <d a fs>2~ |
@@ -133,6 +133,64 @@ rightHand = \relative f' {
  <a fs d>2 <g d b>8 <e c g> <c g e>4 <d a fs>2~ |
  <d a fs> <a' e c>8 <b fs d> <c g e>4 <d a fs>2~ |
  <d a fs>2.~ <d a fs>4 <a e c>2 |
+ <b fs d>4 <a e c> <fs c a> <g d b> <fs c a> <g e c> |
+ <a fs d>2.~ <a fs d>2 <a e c>8 <b fs d> |
+ <c g e>4 <d a fs>2~ <d a fs>4 <a e c>2 | % -way
+ <b fs d>4 <a e c> <fs c a> <g d b> <fs c a> <g e c> |
+ <a fs d>2.~ <a fs d>4 r r |
+ <g e c>4_\p <fs d b> <g e c> <a fs d>2.~ |
+ <a fs d>2 <g d b>8 <e c g> <c g e>4 <d a fs>2 | % 9/4
+ c'4.( e8 d4 c e4. \tuplet 3/2 { d16 e d } c4 a b) |
+ c4( e,4. f16 g a2) <fs a d>4~ <fs a d>2. | % 6/4
+ <g c e g>4 <fs b d fs> <g c e g> <a d fs a>2.~ |
+ <a d fs a>2 r4 <c g e c>4 <d a fs d>2~ |
+ <d a fs d>2 <a d fs a>8 <b e g b> <c e g c>4 <d fs a d>2~ |
+ <d fs a d>2.~ <d fs a d>4 <a d fs a>2 |
+ <b d fs b>4 <a d fs a> <fs b d fs> <g c e g>_\cresc <a a'> <b b'> |
+ <c c'>4. <e e'>8 <d d'>4 <c c'> <a a'> <b b'>_\ff |
+ <c e g c>4 <d fs a d>2~ <d fs a d>4 <a d fs a>2 |
+ <b d fs b>4 <a d fs a> <fs b d fs> <g c e g> <fs b d fs> <g c e g> |
+ <a d fs a>2. <a d fs> |
+ <g c e>4( <fs a d> <e g c> <a e c>2.~) <a e c>2 r4 <e c g> <fs d a>2 | % 9/4
+ c'4.( e8 d4 c e4. \tuplet 3/2 { d16 e d } c4 a b) |
+ c4( e,4. f16 g a2) <fs a d>4~ <fs a d>2. | % 6/4
+ \tuplet 2/3 { c''4 b } \tuplet 2/3 { a g } |
+ \tuplet 2/3 { fs d } \tuplet 2/3 { c b } |
+ \tuplet 2/3 { a g } \tuplet 2/3 { fs e } |
+ <c' g e>2. <d a d,> |
+ <b fs d> <c g c,>2.~ |
+ <c g c,> <d a d,> |
+ <c g e> <d a d,> |
+ <b fs d> <c g c,>2.~ |
+ <c g c,> <d a d,> |
+ r1. |
+ r1. |
+ r1. |
+ c2~\pp( c e |
+ <d c g>1.~) |
+ <d c g> |
+}
+
+rightHandDown = \relative f' {
+  \partial 4 s4 |
+  s1. * 15 |
+
+  %\time 9/4
+  s1. s2. | s1. s2.
+
+  %\time 6/4
+  s1. * 11 |
+
+  %\time 9/4
+  s1. s2. | s1. s2. |
+
+  %\time 6/4
+  <c' g e c>2. <a fs d>~ |
+  <a fs d> <e c a> |
+
+  s1. * 10 |
+  <g e>2.~ <g e> |
+  s1. * 2 |
 }
 
 leftHandUp = \relative f {
@@ -234,23 +292,26 @@ leftHandDown = \relative f {
             \accidentalStyle voice
             \clef treble
             \set Staff.printPartCombineTexts = ##f
-            \new Voice = "rightHand" {
-              << \global \rightHand >>
+            \partcombine \global \new Voice = "rightHandUp" {
+              \voiceOne \rightHandUp
+            }
+            \partcombine \global \new Voice = "rightHandDown" {
+              \voiceTwo \rightHandDown
             }
           >>
         }
         \context Staff = "leftHand" {
           <<
-          \accidentalStyle voice
-          \clef bass
-          \set Staff.printPartCombineTexts = ##f
-          \partcombine \global \new Voice = "leftHandUp" {
-            \voiceOne \leftHandUp
-          }
-          \partcombine \global \new Voice = "leftHandDown" {
-            \voiceTwo \leftHandDown
-          }
-        >>
+            \accidentalStyle voice
+            \clef bass
+            \set Staff.printPartCombineTexts = ##f
+            \partcombine \global \new Voice = "leftHandUp" {
+              \voiceOne \leftHandUp
+            }
+            \partcombine \global \new Voice = "leftHandDown" {
+              \voiceTwo \leftHandDown
+            }
+          >>
         }
       >>
     }
