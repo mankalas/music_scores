@@ -48,24 +48,19 @@ global = {
   s1. * 15 |
 
   \time 9/4
-
   s1. s2. | s1. s2.
 
   \time 6/4
-
   s1. * 11 |
 
-\time 9/4
+  \time 9/4
+  s1. s2. | s1. s2. |
 
-s1. s2. | s1. s2. |
+  \time 6/4
+  s1. * 15 |
 
-\time 6/4
-
-s1. * 15 |
-
-\bar "|."
+  \bar "|."
 }
-
 
 soloMusic = \relative f' {
   r4 | r1. | r1. | r1. | \barNumberCheck #4
@@ -108,24 +103,23 @@ soloMusic = \relative f' {
   g4 fs g a a2~ |
   a2 g8( e) c4 d d |
   d2.~ d2 r4 | r1. | r | r
-
 }
 
 soloWords = \lyricmode {
 
-My young love said to me, __ "\"My" mo -- ther won't mind And my fa --
-ther __ __ wont slight you for your lack of "kind,\"" __ And she
-stepp'd __ a -- way from me and this she did say, "\"It" __ will not be
-long, love, __ till our wed -- ding "day.\""
+  My young love said to me, __ "\"My" mo -- ther won't mind And my fa --
+  ther __ __ wont slight you for your lack of "kind,\"" __ And she
+  stepp'd __ a -- way from me and this she did say, "\"It" __ will not be
+  long, love, __ till our wed -- ding "day.\""
 
-She __ stepp'd a -- way from me __ and she went thro' the fair,
-And fond -- ly __ __ I watch'd her move here and move there, __ And __
-then she __ went home -- ward with one star a -- wake, As the __ swan
-in the eve -- ning __ moves o -- ver the lake. __ Last __ night she
-came to me, __ she __ came soft -- ly in, __ So __ soft -- ly __ she
-came that her feet made no din, __ And she laid her __ hand on me and
-this she did say "\"It" will not be long, love, till __ our
-wed -- ding "day.\"" __
+  She __ stepp'd a -- way from me __ and she went thro' the fair,
+  And fond -- ly __ __ I watch'd her move here and move there, __ And __
+  then she __ went home -- ward with one star a -- wake, As the __ swan
+  in the eve -- ning __ moves o -- ver the lake. __ Last __ night she
+  came to me, __ she __ came soft -- ly in, __ So __ soft -- ly __ she
+  came that her feet made no din, __ And she laid her __ hand on me and
+  this she did say "\"It" will not be long, love, till __ our
+  wed -- ding "day.\"" __
 
 }
 
@@ -141,25 +135,68 @@ rightHand = \relative f' {
  <d a fs>2.~ <d a fs>4 <a e c>2 |
 }
 
-leftHand = \relative f {
+leftHandUp = \relative f {
   \tuplet 3/2 { g8 a b } |
+  r2. r4 r a, |
+  d,2 r4 r r a' |
+  d,2. r2. |
+  r1. |
+  r2. r4 r a' |
+  d,2. r4 r a' |
+  d,2. r2. |
+  a'4 d,2~ d2.~ |
+  d2. r2. |
+  r4 a'4 d,~ d2. |
+  r4 r a' d, 2. |
+  r1. |
+  r4 a'4 d,~ d2.~ |
+  d2 r4 r r a' |
+  d,2. r2. |
+  d4( a' d fs a c) e2 r4 |
+  d,, a' e' g a c d2.~ |
+  d2.^\f r4 r a, |
+  d,2.~ d4 r a' |
+  d,2 a''8 b c4 d2~ |
+  d2.~ d4 a2 |
+  b4 a f g f g |
+  a2.~ a2 a8^\ff b |
+  c4 d2~ d4 a2 |
+  b4 a f g f g |
+  r4 a, d,^\dim a' d a'~ |
+  a2. r4 r a,4( |
+  <a d,>2.)~ <a d,>4 r r |
+  d,4^\p( a' d fs a c) e2 r4 |
+  d,,( a' e' g a c d2.) |
+  r1. |
+  d,,2. r |
+  \clef treble <fs'' d>2. \clef bass <a,, d,>2. |
+  \tuplet 2/3 { a'4 g } \tuplet 2/3 { fs d,~ } |
+  \tuplet 2/3 { d a' } \tuplet 2/3 { e' a, } |
+  \tuplet 2/3 { d, a' } \tuplet 2/3 { fs' d, } |
+  \tuplet 2/3 { a'' g } \tuplet 2/3 { fs d,~ } |
+  \tuplet 2/3 { d a' } \tuplet 2/3 { e' d, } |
+  \tuplet 2/3 { d a' } \tuplet 2/3 { fs' d, } |
+  \tuplet 2/3 { c'' e } <fs, a d>2.~ |
+  <fs a d> \tuplet 2/3 { c'4 e } |
+  <fs, a d>2.~ <fs a d>
+  r1. | r | r
 }
 
 \score {
  <<
-    \new ChoirStaff <<
-      \new Staff = "solo" <<
-        \clef treble
-        \set Staff.instrumentName = "Solo"
-        \set Staff.shortInstrumentName = "S."
-        \new Voice = "solo" {
-          << \global \soloMusic >>
-        }
-      >>
-      \new Lyrics = "solo"
+     \new ChoirStaff <<
+       \new Staff = "solo" <<
+         \clef treble
+         \set Staff.instrumentName = "Solo"
+         \set Staff.shortInstrumentName = "S."
+         \new Voice = "solo" {
+           << \global \soloMusic >>
+         }
+       >>
+       \new Lyrics = "solo"
 
-      \context Lyrics = "solo" \lyricsto "solo" \soloWords
-    >>
+       \context Lyrics = "solo" \lyricsto "solo" \soloWords
+     >>
     \new PianoStaff {
       \set PianoStaff.instrumentName = "Piano"
       \set PianoStaff.shortInstrumentName = "P."
@@ -180,7 +217,7 @@ leftHand = \relative f {
           \clef bass
           \set Staff.printPartCombineTexts = ##f
           \new Voice = "leftHand" {
-            << \global \leftHand >>
+            << \global \leftHandUp >>
           }
         >>
         }
