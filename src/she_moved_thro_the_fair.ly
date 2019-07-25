@@ -156,7 +156,7 @@ leftHandUp = \relative f {
   d,, a' e' g a c d2.~ |
   d2.^\f r4 r a, |
   d,2.~ d4 r a' |
-  d,2 a''8 b c4 d2~ |
+  d,2 a''8 b c4 d2~ | \barNumberCheck #21
   d2.~ d4 a2 |
   b4 a f g f g |
   a2.~ a2 a8^\ff b |
@@ -180,6 +180,34 @@ leftHandUp = \relative f {
   <fs a d> \tuplet 2/3 { c'4 e } |
   <fs, a d>2.~ <fs a d>
   r1. | r | r
+}
+
+leftHandDown = \relative f {
+  \partial 4 s4 |
+  s1. * 15 |
+
+  \time 9/4
+  s1. s2. | s1. s2.
+
+  \time 6/4
+  s1. * 3 | \barNumberCheck #21
+  a,4( d,2)~ d2. |
+  s2. s2. |
+  \acciaccatura d,8 d1. |
+  r4 r a'' d,2.~ |
+  d2 s1 |
+  s2. s |
+  s s |
+  s s |
+
+  \time 9/4
+  s1. s2. | s1. s2. |
+
+  \time 6/4
+  s1. * 9 |
+  <e' g>2. \tuplet 2/3 { r4 a, } |
+  d,2. <e' g> |
+  r2. d, |
 }
 
 \score {
@@ -216,8 +244,11 @@ leftHandUp = \relative f {
           \accidentalStyle voice
           \clef bass
           \set Staff.printPartCombineTexts = ##f
-          \new Voice = "leftHand" {
-            << \global \leftHandUp >>
+          \partcombine \global \new Voice = "leftHandUp" {
+            \voiceOne \leftHandUp
+          }
+          \partcombine \global \new Voice = "leftHandDown" {
+            \voiceTwo \leftHandDown
           }
         >>
         }
