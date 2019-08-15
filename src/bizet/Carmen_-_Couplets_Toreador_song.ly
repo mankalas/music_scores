@@ -29,7 +29,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 carmenVoice =  \relative c'' {
   \clef "treble"
-  \key as \major
+  \key af \major
   \numericTimeSignature
   \time 4/4
   \tempo "Allegro moderato" 4 = 108
@@ -65,7 +65,7 @@ carmenVoice =  \relative c'' {
     f16 \pp ( g16 f16 )
   }
   c8 bf'8 a8 r8 g8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -116,7 +116,7 @@ carmenVoiceLyricsOne =  \lyricmode {
   "t'at" -- "tend! " __
 }
 moralesVoice =  \relative c' {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -146,7 +146,7 @@ moralesVoice =  \relative c' {
     f16 \pp ( g16 f16 )
   }
   c8 bf'8 a8 r8 g8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -194,7 +194,7 @@ moralesVoiceLyricsOne =  \lyricmode {
   -- a -- "dor! " __ "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 escamilloVoice =  \relative c' {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
   R1*8 | % 9
   c8 \f b8 c4 r8 b8 c8 ( bf8 ) | \barNumberCheck #10
@@ -291,7 +291,7 @@ escamilloVoice =  \relative c' {
     f,16 \pp ( g16 f16 )
   }
   c8 bf'8 a8 r8 g8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*7 | % 67
   c'8 \mf ^\markup{ \italic {très déclamé} } b8 c4 r8 b8 c8 bf8
   \break | % 68
@@ -439,7 +439,7 @@ escamilloVoiceLyricsOne =  \lyricmode {
   -- "dor! " __ "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 zunigaVoice =  \relative c' {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -469,7 +469,7 @@ zunigaVoice =  \relative c' {
     f16 \pp ( g16 f16 )
   }
   c8 bf'8 a8 r8 g8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -517,7 +517,7 @@ zunigaVoiceLyricsOne =  \lyricmode {
     " __ "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 sopranoOneVoiceOne =  \relative c'' {
-  \clef "treble" \key as \major \numericTimeSignature\time 4/4
+  \clef "treble" \key af \major \numericTimeSignature\time 4/4
   \partial 4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -556,7 +556,7 @@ sopranoOneVoiceOne =  \relative c'' {
     f,16 \pp ( g16 f16 )
   }
   c8 bf'8 a8 r8 g8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -618,7 +618,7 @@ sopranoOneVoiceOneLyricsOne =  \lyricmode {
   "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 sopranoTwoVoice =  \relative c'' {
-  \clef "treble" \key as \major \numericTimeSignature\time 4/4
+  \clef "treble" \key af \major \numericTimeSignature\time 4/4
   \partial 4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -657,7 +657,7 @@ sopranoTwoVoice =  \relative c'' {
     f,16 \pp ( g16 f16 )
   }
   c8 bf'8 a8 r8 g8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -718,7 +718,7 @@ sopranoTwoVoiceLyricsOne =  \lyricmode {
   -- "mour " __ "t'at" -- "tend! " __
 }
 tenorOneVoice =  \relative c'' {
-  \transposition c \clef "treble" \key as \major
+  \transposition c \clef "treble" \key af \major
   \numericTimeSignature\time 4/4 \partial 4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -745,7 +745,7 @@ tenorOneVoice =  \relative c'' {
   g,2 ( g2 | % 57
   a1 ) ~ \pageBreak | % 58
   a16 r16 r8 r4 r4 e'8 \ppp r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -788,7 +788,7 @@ tenorOneVoiceLyricsOne =  \lyricmode {
   -- "ré" -- a -- "dor! " __ "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 tenorTwoVoice =  \relative c'' {
-  \transposition c \clef "treble" \key as \major
+  \transposition c \clef "treble" \key af \major
   \numericTimeSignature\time 4/4 \partial 4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -815,7 +815,7 @@ tenorTwoVoice =  \relative c'' {
   f2 ( f2 | % 57
   f1 ) ~ \pageBreak | % 58
   f16 r16 r8 r4 r4 c'8 \ppp r8 \bar "||"
-  \key as \major f,8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f,8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -858,7 +858,7 @@ tenorTwoVoiceLyricsOne =  \lyricmode {
   -- "ré" -- a -- "dor! " __ "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 bassOneVoice =  \relative c' {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -885,7 +885,7 @@ bassOneVoice =  \relative c' {
   bf8 r8 d8 r8 bf8 r8 g8 r8 | % 57
   c8 r8 f8 r8 a8 r8 c8 r8 \pageBreak | % 58
   c,16 r16 r8 r4 r4 c8 \ppp r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -932,7 +932,7 @@ bassOneVoiceLyricsOne =  \lyricmode {
   -- a -- "dor! " __ "L'a" -- "mour " __ "t'at" -- "tend! " __
 }
 bassTwoVoice =  \relative c' {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
   R1*10 \break | % 11
   R1*3 \break | % 14
@@ -959,7 +959,7 @@ bassTwoVoice =  \relative c' {
   bf8 r8 d8 r8 bf8 r8 g8 r8 | % 57
   c8 r8 f8 r8 a8 r8 c8 r8 \pageBreak | % 58
   c,16 r16 r8 r4 r4 \ppp c8 r8 \bar "||"
-  \key as \major f8 r8 r4 r2 | \barNumberCheck #60
+  \key af \major f8 r8 r4 r2 | \barNumberCheck #60
   R1*8 \break | % 68
   R1*4 \break | % 72
   R1*3 \break | % 75
@@ -1319,7 +1319,7 @@ rightHandUpVoice =  \relative c'' {
   }
   <c, f>32 r32 r16 <bf' d>32 r32 r16 \pageBreak | % 58
   <a c>32 r32 r16 r8 r4 r4 <g, bf c e>32 r32 r16 r8 \bar "||"
-  \key as \major <c c'>16. r32 <b b'>16. r32 <c c'>4 ~ ~ <c c'>16. r32
+  \key af \major <c c'>16. r32 <b b'>16. r32 <c c'>4 ~ ~ <c c'>16. r32
   <b b'>16. r32 cs'64 r64 <c, c'>16 r32 <bf bf'>16. r32 |
   \barNumberCheck #60
   bf'32 <gs, gs'>16 r32 <g g'>16. r32 <gs gs'>4 ~ ~ <gs gs'>16.
@@ -1675,7 +1675,7 @@ rightHandUpVoice =  \relative c'' {
 }
 
 rightHandDownVoice =  \relative e'' {
-  \clef "treble" \key as \major \numericTimeSignature\time 4/4
+  \clef "treble" \key af \major \numericTimeSignature\time 4/4
   \partial 4 s4 \ff | % 1
   s1*7 | % 8
   r4 <e c'>16 r16 r8 r2 s1*2 \break s1*3 \break s1*3 \break s1*2
@@ -1683,7 +1683,7 @@ rightHandDownVoice =  \relative e'' {
   s1 \bar "||"
   \key f \major s1*4 \break s1*4 \break s1*4 \pageBreak s1*5
   \pageBreak s1*2 \pageBreak s1*3 \pageBreak s1 \bar "||"
-  \key as \major s1 | \barNumberCheck #60
+  \key af \major s1 | \barNumberCheck #60
   s1*6 | % 66
   r4 <e c'>16 r16 r8 r2 s1 \break s1*4 \break s1*3 \break s1*3
   \pageBreak s1*4 \break s1*3 \break s1*3 \break s1*4 \break s1*2 \bar
@@ -1694,7 +1694,7 @@ rightHandDownVoice =  \relative e'' {
 }
 
 leftHandUpVoice =  \relative f, {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
   <f f'>8 <c' f gs c>16 <c f gs c>16 <c f gs c>32 r32 r16 <c f gs
   c>32 r32 r16 <c f gs c>32 r32 r16 r8 <c, c'>8 r8 | % 2
@@ -1793,7 +1793,7 @@ leftHandUpVoice =  \relative f, {
   <c, c'>32 r32 r16 r8 <f f'>32 r32 r16 r8 <a a'>32 r32 r16 r8 <c c'>32
   r32 r16 r8 \pageBreak | % 58
   <c, c'>32 r32 r16 r8 r4 r4 <c' c'>32 r32 r16 r8 \bar "||"
-  \key as \major <f, f'>8 <c' f gs c>16 <c f gs c>16 <c f gs c>32 r32
+  \key af \major <f, f'>8 <c' f gs c>16 <c f gs c>16 <c f gs c>32 r32
   r16 <c f gs c>32 r32 r16 <c f gs c>32 r32 r16 r8 <c, c'>8 r8 |
   \barNumberCheck #60
   <f f'>8 <c' f gs c>16 <c f gs c>16 <c f gs c>32 r32 r16 <c f gs
@@ -1916,7 +1916,7 @@ leftHandUpVoice =  \relative f, {
 }
 
 leftHandDownVoice =  \relative e {
-  \clef "bass" \key as \major \numericTimeSignature\time 4/4 \partial
+  \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 s4 | % 1
   s1*7 | % 8
   r4 <e bf'>16 r16 r8 r2 s1*2 \break s1*3 \break s1*3 \break s1*2
@@ -1924,7 +1924,7 @@ leftHandDownVoice =  \relative e {
   s1 \bar "||"
   \key f \major s1*4 \break s1*4 \break s1*4 \pageBreak s1*5
   \pageBreak s1*2 \pageBreak s1*3 \pageBreak s1 \bar "||"
-  \key as \major s1 | \barNumberCheck #60
+  \key af \major s1 | \barNumberCheck #60
   s1*6 | % 66
   r4 <e bf'>16 r16 r8 r2 s1 \break s1*4 \break s1*3 \break s1*3
   \pageBreak s1*4 \break s1*3 \break s1*3 \break s1*4 \break s1*2 \bar
