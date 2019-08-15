@@ -1948,16 +1948,16 @@ leftHandDownVoice =  \relative e {
         >>
       >>
       \new Staff <<
-        \set Staff.instrumentName = "Frasquita (Sop. 1)"
-        \set Staff.shortInstrumentName = "S1"
+        \set Staff.instrumentName = "Frasquita"
+        \set Staff.shortInstrumentName = "Fr."
         \context Staff <<
           \context Voice = "sopranoOneVoiceOne" { \sopranoOneVoiceOne }
           \new Lyrics \lyricsto "sopranoOneVoiceOne" \sopranoOneVoiceOneLyricsOne
         >>
       >>
       \new Staff <<
-        \set Staff.instrumentName = "Mercedes (Sop. 2)"
-        \set Staff.shortInstrumentName = "S2"
+        \set Staff.instrumentName = "Mercedes"
+        \set Staff.shortInstrumentName = "Me."
         \context Staff <<
           \context Voice = "sopranoTwoVoice" { \sopranoTwoVoice }
           \new Lyrics \lyricsto "sopranoTwoVoice" \sopranoTwoVoiceLyricsOne
@@ -1990,7 +1990,7 @@ leftHandDownVoice =  \relative e {
     >>
     \new ChoirStaff <<
       \new Staff <<
-        \set Staff.instrumentName = "tenor 1"
+        \set Staff.instrumentName = "Tenor 1"
         \set Staff.shortInstrumentName = "T1"
         \context Staff <<
           \context Voice = "tenorOneVoice" { \tenorOneVoice }
@@ -1998,7 +1998,7 @@ leftHandDownVoice =  \relative e {
         >>
       >>
       \new Staff <<
-        \set Staff.instrumentName = "tenor 2"
+        \set Staff.instrumentName = "Tenor 2"
         \set Staff.shortInstrumentName = "T2"
         \context Staff <<
           \context Voice = "tenorTwoVoice" { \tenorTwoVoice }
@@ -2025,13 +2025,11 @@ leftHandDownVoice =  \relative e {
     >>
     \new PianoStaff <<
       \set PianoStaff.instrumentName = "Piano"
-      \set PianoStaff.shortInstrumentName = "Pno."
+      \set PianoStaff.shortInstrumentName = "P."
       \context Staff = "1" <<
-        \context Voice = "rightHandUpVoice" { \voiceOne \rightHandUpVoice }
-        \context Voice = "rightHandDownVoice" { \voiceTwo \rightHandDownVoice }
+        \context Voice = "rightHandUpVoice" {  \rightHandUpVoice }
       >> \context Staff = "2" <<
-        \context Voice = "leftHandUpVoice" { \voiceOne \leftHandUpVoice }
-        \context Voice = "leftHandDownVoice" { \voiceTwo \leftHandDownVoice }
+        \context Voice = "leftHandUpVoice" {  \leftHandUpVoice }
       >>
     >>
 
