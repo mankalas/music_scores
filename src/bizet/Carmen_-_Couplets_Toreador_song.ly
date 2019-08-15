@@ -1007,14 +1007,22 @@ bassTwoVoiceLyricsOne =  \lyricmode {
 }
 
 rightHandUpVoice =  \relative c'' {
-  \clef "treble" \key as \major \numericTimeSignature\time 4/4
-  \partial 4 c16 \ff d32 e32 f32 g32 gs32 bf32 | % 1
-  <c, c'>16. r32 <b b'>16. r32 <c c'>4 ~ ~ <c c'>16. r32 <b b'>16. r32
-  cs'64 r64 <c, c'>16 r32 <bf bf'>16. r32 | % 2
-  bf'32 <gs, gs'>16 r32 <g g'>16. r32 <gs gs'>4 ~ ~ <gs gs'>16.
-  r32 <g g'>16. r32 bf'64 r64 <gs, gs'>16 r32 <g g'>16. r32 | % 3
-  g'32 <f, f'>16 r32 <e e'>16. r32 <f f'>4 ~ ~ <f f'>16. r32 <es es'>16.
-  r32 es'64 r64 <cs, cs'>16 r32 <c c'>16. r32 | % 4
+  \clef "treble" \key af \major \numericTimeSignature\time 4/4
+
+  \set Score.skipTypesetting = ##t
+  \stemDown
+  \partial 4 \afterGrace c4 \ff {d32( e32 f32 g32 a32 bf32)} | % 1
+  <c, c'>8-^-. <b b'>-^-. <c c'>4-^~ <c c'>8[ <b b'>-^-. \stemUp \acciaccatura df'! \stemDown <c, c'>-^-. <bf bf'>-^-.] | %2
+   \acciaccatura bf'8 <af, af'>8-^-.  <g g'>8-^-. <af af'>4-^~ <af af'>8
+  <g g'>-^-. \acciaccatura bf'8 <af, af'>-^-. <g g'>-^-. | % 3
+
+\set Score.skipTypesetting = ##f
+  \acciaccatura g'8 <f, f'>8-^-. <e e'>-^-. <f f'>4-^ ~  <f f'>8[ <ef ef'>-^-. \acciaccatura ef' <df, df'>-^-. <c c'>-^-.] | % 4
+  \stemNeutral
+
+  \set Score.skipTypesetting = ##t
+
+
   es'32 <cs, cs'>16 r32 <c c'>16. r32 bf'4 ~ bf8 \once \override
   TupletBracket #'stencil = ##f
   \times 2/3  {
@@ -1696,10 +1704,11 @@ rightHandDownVoice =  \relative e'' {
 leftHandUpVoice =  \relative f, {
   \clef "bass" \key af \major \numericTimeSignature\time 4/4 \partial
   4 r4 | % 1
-  <f f'>8 <c' f gs c>16 <c f gs c>16 <c f gs c>32 r32 r16 <c f gs
-  c>32 r32 r16 <c f gs c>32 r32 r16 r8 <c, c'>8 r8 | % 2
-  <f f'>8 <c' f gs c>16 <c f gs c>16 <c f gs c>32 r32 r16 <c f gs
-  c>32 r32 r16 <c f gs c>32 r32 r16 r8 <c, c'>8 r8 | % 3
+  \stemDown
+  <f f'>8-^ <c' f af c>16 <c f af c>16 <c f af c>8-. <c f af
+  c>8-. <c f af c>8-. r8 \stemNeutral <c, c'>8_^ r8 | % 2
+  <f f'>8-^ <c' f af c>16 <c f af c>16 <c f af c>8-. <c f af
+  c>8-. <c f af c>8-. r8 \stemNeutral <c, c'>8_^ r8 | % 3
   <f f'>8 <es' f a>16 <es f a>16 <es f a>32 r32 r16 <es f a>32 r32 r16
   <es f a>32 r32 r16 r8 <f,, f'>8 r8 | % 4
   <bf bf'>8 <cs' f bf>16 <cs f bf>16 <cs f bf>32 r32 r16 <cs
