@@ -539,34 +539,51 @@ bassOne = \relative c' {
   d4. c4 d8 b2. |
   e4. d4 e8 c4. c4. |
   f4. e4. d4. c4. |
-  
+
   \bar "||"
   \time 6/8
   b4. a4. |
-  
+
   \bar "||"
   \time 12/8
   d4 r8 d'4.~^> d8 a b c b a |
   g4. g4 g8 e2. |
   d4. d4 d8 d2. |
   c4. c4 c8 c2. |
-  d8 r4 r4 r4 fs8 fs fs fs fs |
-  g4 r8 r4 r8 r8 g g g g g |
-  gs4 r8 r4 r8 r gs gs gs gs gs |
-  a4 r8 r gs gs a4 r8 r gs gs |
-  a8 r8 r r4 r8 r4 r8 d4 d8 |
+  d8 <<
+    \voiceOne {
+      r4 r4 r4 fs8 fs fs fs fs |
+      g4 r8 r4 r8 r8 g g g g g |
+      gs4 r8 r4 r8 r gs gs gs gs gs |
+      a4 r8 r gs gs a4 r8 r gs gs |
+      a8
+    }
+    \new Voice {
+      \voiceTwo {
+        d,8 d d d d d2.~ |
+        d8 d d d d d d2.~ |
+        d8 d d d d d d2.~ |
+        d8 d d d4.~ d8 d d d4.~ |
+        d8
+      }
+    }
+  >> \oneVoice
+  r2. r4 d'4 d8 |
   c2.~ c4. c |
-  b2.~ b4.~ b4 r8
-  
+  <<
+    { \voiceOne b2.~ b4.~ b4 }
+    \new Voice { \voiceTwo g2.~ g4.~ g4 }
+  >> \oneVoice r8
+
   \bar "|."
 }
 
 bassTwo = \relative c' {
   \global
   % Music follows here.
-  
+
   b4. b4 b8 g4. g4 g8 |
-  d'2. d4. d4 d8 |  
+  d'2. d4. d4 d8 |
   a4. a4 a8 f4. f4 f8 |
   c'2.~ c4. c4 c8 |
   c4. c4 c8 c4. c4 c8 |
@@ -954,16 +971,16 @@ rehearsalMidi = #
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "bass1" \verseBassOne
-      \new Staff \with {
-        midiInstrument = "choir aahs"
-        instrumentName = "Bass II"
-      } {
-        \clef bass
-        \new Voice = "bass2" \bassTwo
-      }
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "bass2" \verseBassTwo
+      % \new Staff \with {
+      %         midiInstrument = "choir aahs"
+      %         instrumentName = "Bass II"
+      %       } {
+      %         \clef bass
+      %         \new Voice = "bass2" \bassTwo
+      %       }
+      %       \new Lyrics \with {
+      %         \override VerticalAxisGroup #'staff-affinity = #CENTER
+      %       } \lyricsto "bass2" \verseBassTwo
     >>
     %\pianoReduction
   >>
