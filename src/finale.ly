@@ -5,7 +5,84 @@ global = {
   \key g \major
   \time 12/8
   \tempo "L'istesso tempo" 4=60
+
+}
+
+
+santuzza = \relative c' {
+  \global
+  % Music follows here.
+  R1. * 16
+
+  \bar "||"
+  \time 4/4
+  R1 * 5
+
+  \bar "||"
+  \time 12/8
+  r2. r4 r8 d4 d8
+
+  \bar "||"
+  \time 12/8
+  b'2.~ b8 g a b c\( d |
+  b4.~ b4 a8 g4.\) g4 g8 |
+  e'2.~ e8 c d e f g\( |
+  e4.~ e4 d8 c4.\) c8\( d e |
+  f e f d2.\) d8\( e f\) |
+  g fs! g e4.~\( e8 e fs g fs e\) |
+  d2.~ d8 r4 r r8 |
+  R1. * 2 |
+  r2. r4 r8 fs,4 fs8 |
+  d'2.~ d8 b\( c d e f\) |
+  e8 ds e g4.~ g8\( fs e\) d4 r8 |
+  r1. |
+  e8\( ds\) e8 g2.~ g8 fs e |
+  d!2.~ d8 a c b a b |
+  g r r r4 r8 r2. |
+  r2. r4 r8 gf4 gf8 |
+  ef'2.~ ef8 cf df ef! f gf |
+  f f f f4.~ f8 f f f4.~ |
+
+  \bar "||"
+  \time 6/8
+  f4. ef4 ef8 |
+
+  \bar "||"
+  \time 12/8
+  f4. f4.\( af~\) af4 g8 |
+  f8( ef) g, d'4 c8 c8( bf ef,) bf'4 af8 |
+  g r r r4 r8 r2. |
+  r1. | r | r |
+  r2. |
+  r2. r4 r8 d4 d8 |
+  b'2.~ b8 g a b c d |
+  b4.~ b4 a8 g4. g4 g8 |
+  e'2.~ e8 c d e f g |
+  e4.~ e4( d8) c4. c8 d e |
+  f e f d2. d8 e f |
+  g fs! g e2. r4 r8 |
+  r2. r4 r8 a,\( b\) c
+
+  \bar "||"
+  \time 6/8
+  d cs d e fs! g |
+
+  \bar "||"
+  \time 12/8
+  g4 r8 d4.~^> d8 a b c b a |
+  g4. r4 r8 r4 r8^\p  g'4\(^"espress." g8\) |
+  fs4.~ fs8 r r r4 r8 f4\( f8 |
+  e4.~\) e8 r8 r r4 r8 ef4\( ef8 |
+  d\) r r r4 r8 r2. |
+  r1. | r | r |
+  r2. r4 r8 d4 d8 |
+  <<
+    \new Voice { \voiceOne { \tieDown \stemDown e2.~ e4. e | g2.~ g4.~ g4 } }
+    \new Voice { \voiceTwo { \tieUp \stemUp \teeny g2.~ g4. a | b2.~ b4.~ b4 } }
+  >> \oneVoice
+  r8 
   
+  \bar "|."
 }
 
 sopranoOne = \relative c'' {
@@ -27,15 +104,15 @@ sopranoOne = \relative c'' {
   f2.\( e4.\) e4 e8 |
   d8 e fs! g4.~ g4\( fs16 e\) fs4~ fs16 g |
   g2.~ g8 r r r4 r8 |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
@@ -52,23 +129,23 @@ sopranoOne = \relative c'' {
   r2. r4 r8 gf4 gf8 |
   ef'2.~ ef8 cf df ef! f gf |
   f f f f4.~ f8 f f f4.~ |
-  
+
   \bar "||"
   \time 6/8
   f4. ef4 ef8 |
-  
+
   \bar "||"
   \time 12/8
   f4. f4.\( af~\) af4 g8 |
   f8( ef) g, d'4 c8 c8( bf ef,) bf'4 af8 |
   g r r r4 r8 r2. |
   r1. | r |
-  r8 bf bf bf a bf b4 r8 r4 r8 
-  
+  r8 bf bf bf a bf b4 r8 r4 r8
+
   \bar "||"
   \time 6/8
   r b! c c b c |
-  
+
   \bar "||"
   \time 12/8
   c c c c c c c r r d,4 d8 |
@@ -79,11 +156,11 @@ sopranoOne = \relative c'' {
   f e f d2. d8 e f |
   g fs! g e2. r4 r8 |
   r2. r4 r8 a,\( b\) c
-  
+
   \bar "||"
   \time 6/8
   d cs d e fs! g |
-  
+
   \bar "||"
   \time 12/8
   g4 r8 d4.~^> d8 a b c b a |
@@ -97,6 +174,8 @@ sopranoOne = \relative c'' {
   fs r r r4 r8 r4 r8 d4 d8 |
   e2.~ e4. e |
   g2.~ g4.~ g4 r8
+  
+  \bar "|."
 }
 
 sopranoTwo = \relative c'' {
@@ -118,21 +197,21 @@ sopranoTwo = \relative c'' {
   c2.\( c4.\) as!4 as8 |
   b4. g8 a b c4. c4 c8 |
   b2.~ b8 r r r4 r8 |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
   r2. r8 fs g a g fs |
   d2.~ d8 r r r4 r8 |
-  r1. | r | r | 
+  r1. | r | r |
   r4 r8 d'!4 e8 c4.\( b4\) r8 |
   r1. |
   r4 r8 d!4 e8 c4. e,8\( ds\) e |
@@ -141,23 +220,23 @@ sopranoTwo = \relative c'' {
   r2. r4 r8 gf4 gf8 |
   ef'2.~ ef8 cf df ef! f gf |
   f f f f4.~ f8 f f f4.~ |
-  
+
   \bar "||"
   \time 6/8
   f4. ef4 ef8 |
-  
+
   \bar "||"
   \time 12/8
   f4. f4.\( d!4.~\) d4 d8 |
   f8( ef) g, d'4 c8 c8( bf ef,) bf'4 af8 |
   g r r r4 r8 r2. |
   r1. | r |
-  r8 bf bf bf a bf b4 r8 r4 r8 
-  
+  r8 bf bf bf a bf b4 r8 r4 r8
+
   \bar "||"
   \time 6/8
   r b! c c b c |
-  
+
   \bar "||"
   \time 12/8
   c c c c c c c r r d,4 d8 |
@@ -168,11 +247,11 @@ sopranoTwo = \relative c'' {
   f e f d2. d8 r r |
   r4 r8 b4 b8 b4.( bf8) r r |
   r2. r4 r8 a\( b\) c
-  
+
   \bar "||"
   \time 6/8
   d cs d e fs! g |
-  
+
   \bar "||"
   \time 12/8
   g4 r8 d4.~^> d8 a b c b a |
@@ -185,8 +264,8 @@ sopranoTwo = \relative c'' {
   c4 r8 r b b c4 r8 r b b |
   c r r r4 r8 r4 r8 d4 d8 |
   e2.~ e4. e |
-  d2.~ d4.~ d4 r8 
-  
+  d2.~ d4.~ d4 r8
+
   \bar "|."
 }
 
@@ -209,15 +288,15 @@ alto = \relative c'' {
   a'2.\( g4.\) g4 g8 |
   g4. g8 a b c4. a4 a8 |
   g2.~ g8 r r r4 r8 |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
@@ -234,11 +313,11 @@ alto = \relative c'' {
   cs4.\) cs4 r8 r2. |
   r1. |
   af4. a4. bf4. cf4 cf8 |
-  
+
   \bar "||"
   \time 6/8
   bf4. bf4 bf8 |
-  
+
   \bar "||"
   \time 12/8
   a!4. a4. af4.~ af4 af8 |
@@ -247,11 +326,11 @@ alto = \relative c'' {
   r2. r8 af'8 af af g af |
   a!4 r8 r4 r8 r2. |
   r1. |
-  
+
   \bar "||"
   \time 6/8
   r2.
-  
+
   \bar "||"
   \time 12/8
   r8 fs! fs fs fs fs fs r r r4 r8 |
@@ -262,16 +341,16 @@ alto = \relative c'' {
   r4 r8 f,4 f8 f4.~ f8 r r |
   r4 r8 g4 g8 g4.~ g8 r r |
   r1. |
-  
+
   \bar "||"
   \time 6/8
   r4 r8 c!4. |
-  
+
   \bar "||"
   \time 12/8
   b4 r8 d4.~^> d8 a b c b a |
   g4. r8 r4 r2. |
-  r1. | r | 
+  r1. | r |
   r2. r8 fs fs fs fs fs |
   g4 r8 r4 r8 r g g g g g |
   gs4 r8 r4 r8 r gs gs gs gs gs |
@@ -300,15 +379,15 @@ tenorOne = \relative c' {
   f2.\( e4.\) e4 e8 |
   d8 e fs! g4.~ g4( fs16 e) fs4~ fs16 g |
   g2.~ g8 r r r4 r8 |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
@@ -324,12 +403,12 @@ tenorOne = \relative c' {
   b r r r4 r8 r4 r8 e,4 e8 |
   cs'2.~ cs8 a b cs ds e |
   ds4.~ ds8 r r r2. |
-  r4 r8 r f f f4.~ f8 f f 
-  
+  r4 r8 r f f f4.~ f8 f f
+
   \bar "||"
   \time 6/8
-  f4. ef4 ef8 
-  
+  f4. ef4 ef8
+
   \bar "||"
   \time 12/8
   f!4. f4. af4.~ af4 g8 |
@@ -338,11 +417,11 @@ tenorOne = \relative c' {
   r1. |
   r2. r8 a! a a gs a |
   bf4 r8 r4 r8 r8 b! b b as b
-  
+
   \bar "||"
   \time 6/8
   c8 b! c c b c
-  
+
   \bar "||"
   \time 12/8
   c8 c c c c c c r4 d,4 d8 |
@@ -353,7 +432,7 @@ tenorOne = \relative c' {
   f e f d2. d8 e f |
   g fs! g e2. r8 r4 |
   r8 r4 c8 d e f e f e4. |
-  
+
   \bar "||"
   \time 6/8
   d8 cs d e fs! g |
@@ -365,13 +444,13 @@ tenorOne = \relative c' {
   b4. b4 b8 d2. |
   a4. a4 a8 a2. |
   a8 r4 r2 d8 d d d d |
-  e!4 r8 r4 r8 r8 e e e e e| 
+  e!4 r8 r4 r8 r8 e e e e e|
   f4 r8 r4 r8 r8 f f f f f |
   fs!4 r8 r es es fs4 r8 r es es |
   fs r8 r r4 r8 r4 r8 d4 d8 |
   g2.~ g4. g |
   g2.~ g4.~ g4 r8
-  
+
   \bar "|."
 }
 
@@ -394,15 +473,15 @@ tenorTwo = \relative c' {
   a2.\( c4.\) as4 as8 |
   b4. e4 d8 c4. c4 c8 |
   b2.~ b8 r8 r4 r |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
@@ -419,11 +498,11 @@ tenorTwo = \relative c' {
   cs'2.~ cs8 a b cs ds e |
   ds4.~ ds8 r8 r r2. |
   f4. ef4. df4. df4 df8 |
-  
+
   \bar "||"
   \time 6/8
   df4. c!4 c8 |
-  
+
   \bar "||"
   \time 12/8
   c4. c\( d!~ \) d4 d8 |
@@ -432,11 +511,11 @@ tenorTwo = \relative c' {
   r1. |
   r2. r8 a! a a gs a |
   bf4 r8 r4 r8 r8 b! b b as b
-  
+
   \bar "||"
   \time 6/8
   c8 b! c c b c
-  
+
   \bar "||"
   \time 12/8
   c8 a a a a a a r r r4 r8 |
@@ -447,11 +526,11 @@ tenorTwo = \relative c' {
   r4 r8 a4 a8 a4.( g8) r r |
   r2. r4 r8 e8 f g |
   a gs a g4. a a |
-  
+
   \bar "||"
   \time 6/8
   g e' |
-  
+
   \bar "||"
   \time 12/8
   d4 r8 d4.^>~ d8 a b c! b a |
@@ -465,15 +544,15 @@ tenorTwo = \relative c' {
   c4 r8 r b b c4 r8 r b b |
   c r r r4 r8 r4 r8 d4 d8 |
   e2.~ e4. e |
-  d2.~ d4.~ d4 r8   
+  d2.~ d4.~ d4 r8
 }
 
 bassOne = \relative c' {
   \global
   % Music follows here.
-  
+
   b4. b4 b8 g4. g4 g8 |
-  d'2. d4. d4 d8 |  
+  d'2. d4. d4 d8 |
   a4. a4 a8 f4. f4 f8 |
   c'2.~ c4. c4 c8 |
   c4. c4 c8 c4. c4 c8 |
@@ -488,15 +567,15 @@ bassOne = \relative c' {
   f2.\( c4.\) cs4 cs8 |
   d4. e4 e8 e4. d4 d8 |
   d2.~ d8 r8 r4 r |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
@@ -512,11 +591,11 @@ bassOne = \relative c' {
   a'4.) gs4 a8 fs4.\( gf4.\) |
   cf4. bf4 cf8 af4. af4 af8 |
   df4. c!4 df8 bf4. af4 bf8 |
-  
+
   \bar "||"
   \time 6/8
   gf4. gf4 gf8
-  
+
   \bar "||"
   \time 12/8
   f4. f4.\( bf,4.~\) bf4 bf8 |
@@ -524,11 +603,11 @@ bassOne = \relative c' {
   b!8 r r r4 r8 r g' g g fs! g |
   af4 r4 r r2. |
   r1. | r1. |
-  
+
   \bar "||"
   \time 6/8
   r2.
-  
+
   \bar "||"
   \time 12/8
   r8 d,8 d d d d d' c a fs e d |
@@ -551,14 +630,15 @@ bassOne = \relative c' {
   d4. d4 d8 d2. |
   c4. c4 c8 c2. |
   d8 <<
-    \voiceOne {
+    \new Voice = "bass1part1" {
+      \voiceOne
       r4 r4 r4 fs8 fs fs fs fs |
       g4 r8 r4 r8 r8 g g g g g |
       gs4 r8 r4 r8 r gs gs gs gs gs |
       a4 r8 r gs gs a4 r8 r gs gs |
       a8
     }
-    \new Voice {
+    \new Voice = "bass1" {
       \voiceTwo {
         d,8 d d d d d2.~ |
         d8 d d d d d d2.~ |
@@ -598,15 +678,15 @@ bassTwo = \relative c' {
   f2.\( c4.\) cs4 cs8 |
   d4. c!4 b8 a4. d4 d8 |
   g,2.~ g8 r8 r4 r |
-  
+
   \bar "||"
   \time 4/4
-  R1 * 5 
-  
+  R1 * 5
+
   \bar "||"
   \time 12/8
   R1.
-  
+
   \bar "||"
   \time 12/8
   R1. * 6 |
@@ -622,11 +702,11 @@ bassTwo = \relative c' {
   a'4.) gs4 a8 fs4.\( gf4.\) |
   cf4. bf4 cf8 af4. af4 af8 |
   df4. c!4 df8 bf4. af4 bf8 |
-  
+
   \bar "||"
   \time 6/8
   gf4. gf4 gf8
-  
+
   \bar "||"
   \time 12/8
   f4. f4.\( bf,4.~\) bf4 bf8 |
@@ -634,11 +714,11 @@ bassTwo = \relative c' {
   b!8 r r r4 r8 r g' g g fs! g |
   af4 r4 r r2. |
   r1. | r1. |
-  
+
   \bar "||"
   \time 6/8
   r2.
-  
+
   \bar "||"
   \time 12/8
   r8 d,8 d d d d d' c a fs e d |
@@ -649,11 +729,11 @@ bassTwo = \relative c' {
   d4. c4 d8 b2. |
   e4. d4 e8 c4. c4. |
   f4. e4. d4. c4. |
-  
+
   \bar "||"
   \time 6/8
   b4. a4. |
-  
+
   \bar "||"
   \time 12/8
   d4 r8 d'4.~^> d8 a b c b a |
@@ -667,12 +747,35 @@ bassTwo = \relative c' {
   d8 r8 r r4 r8 r4 r8 d'4 d8 |
   c2.~ c4. c |
   g2.~ g4.~ g4 r8
-  
+
   \bar "|."
 }
 
+verseSantuzza = \lyricmode {
+  O re -- joice __ that the Lord has a -- ris -- \skip8 en
+  He has burst __ thro' the gates of the pri -- \skip8 son,
+  He has a -- ris -- en in glo -- ry,
+  in His glo -- ry to save __
+  in His glo -- ry to save __
+
+  O re -- joice __ that the Lord has a -- ris -- en,
+  a -- ris -- \skip8 \skip8 en
+  ris -- en in glo __ ry to save __ in His glo -- ry to
+  save O re -- joice __ that the Lord has a -- ris -- en
+  a -- ris -- en in glo -- ry to save,
+  ris -- en __ has
+  ris -- en in His glo -- ry to save
+  O re -- joice __ that the Lord has a -- ris -- \skip8 en,
+  O re -- joice __ that the Lord has a -- ris -- en,
+  He has a -- ris -- en in glo -- ry, in His glo -- ry to save
+  He has a -- ris -- en in glo -- ry to save
+  ah! __ in his glo -- ry to save
+  O re -- joice __ in the Lord __ O re -- joice
+  in the Lord __ the Lord __
+}
+
 verseSopranoOne = \lyricmode {
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo __ ry __ to save __
@@ -686,15 +789,15 @@ verseSopranoOne = \lyricmode {
   in __ His glo __ ry to save __ in His glo -- ry to save
   O re -- joice  __ that the Lord has a -- ris -- en
   a -- ris __ en in glo __ ry to
-  save, ris -- en __ has 
-  ris -- en in his glo -- ry to save 
+  save, ris -- en __ has
+  ris -- en in his glo -- ry to save
   O re -- joice in the Lord
   O re -- joice __ in the Lord in the Lord
-  in __ the Lord O re -- joice __ that the Lord has a -- ris __ \skip8 en
-  O re -- joice __ that the Lord has a -- ris __ en
+  in __ the Lord O re -- joice __ that the Lord has a -- ris -- \skip8 en
+  O re -- joice __ that the Lord has a -- ris -- en
   He has a -- ris -- en in glo -- ry
   in His glo -- ry to save
-  He has a -- ris -- en in glo -- ry to save 
+  He has a -- ris -- en in glo -- ry to save
   ah! __ in His glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord
@@ -705,7 +808,7 @@ verseSopranoOne = \lyricmode {
 }
 
 verseSopranoTwo = \lyricmode {
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo __ ry __ to save __
@@ -716,7 +819,7 @@ verseSopranoTwo = \lyricmode {
   in his glo -- ry to save __
   a -- ris __ \skip8 en
   in His glo __ \skip8 ry to save __ in His glo -- ry to save
-  O re -- joice __ that the Lord has a -- ris -- en a -- ris __ en in 
+  O re -- joice __ that the Lord has a -- ris -- en a -- ris __ en in
   glo __ ry to save, ris -- en __ has
   ris __ en in His glo __ ry to save
   O re -- joice in the Lord
@@ -725,7 +828,7 @@ verseSopranoTwo = \lyricmode {
   O re -- joice __ that the Lord has a -- ris __ \skip8 en
   O re -- joice __ that the Lord has a -- ris __ en
   He has a -- ris -- en in glo -- ry
-  in the Lord He has a -- ris -- en in glo -- ry to save 
+  in the Lord He has a -- ris -- en in glo -- ry to save
   ah! __ in His glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord
@@ -736,7 +839,7 @@ verseSopranoTwo = \lyricmode {
 }
 
 verseAlto = \lyricmode {
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in his glo -- ry to save
@@ -746,15 +849,15 @@ verseAlto = \lyricmode {
   He has ris -- en in his glo __ ry to save. __
   in his glo -- ry to save __
   O re -- joice  __ that the Lord has a -- ris -- en
-  He has burst thro' the gates of his pri -- son, has 
+  He has burst thro' the gates of his pri -- son, has
   ris -- en in glo -- ry to save __
   O re -- joice  __ that the Lord is a -- ris -- en
-  in His glo -- ry His 
-  glo -- ry to save, ris -- en __ has 
-  ris -- en in his glo -- ry to save 
+  in His glo -- ry His
+  glo -- ry to save, ris -- en __ has
+  ris -- en in his glo -- ry to save
   O re -- joice in the Lord
   O re -- joice __ in the Lord in the Lord
-  in __ the Lord in the Lord 
+  in __ the Lord in the Lord
   in __ the Lord in the Lord __ in the Lord __
   to save ah! __ in His glo -- ry to save
   % Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
@@ -766,7 +869,7 @@ verseAlto = \lyricmode {
 }
 
 verseTenorOne = \lyricmode {
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in his glo -- ry to save
@@ -785,9 +888,9 @@ verseTenorOne = \lyricmode {
   O re -- joice in the Lord
   O re -- joice in the Lord!
   O re -- joice in the Lord
-  O re -- joice __ that the Lord has a -- 
-  ris __ en O re -- joice __ that the Lord has a -- 
-  ris -- en He has a -- ris -- en in glo -- ry, in His 
+  O re -- joice __ that the Lord has a --
+  ris __ en O re -- joice __ that the Lord has a --
+  ris -- en He has a -- ris -- en in glo -- ry, in His
   glo -- ry to save He has a -- ris -- en in glo -- ry
   in his glo -- ry to save ah! __ in his glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
@@ -799,7 +902,7 @@ verseTenorOne = \lyricmode {
 }
 
 verseTenorTwo = \lyricmode {
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in his glo -- ry to save
@@ -809,7 +912,7 @@ verseTenorTwo = \lyricmode {
   He has ris -- en in glo -- ry to save. __
   in his glo -- ry to save __
   He has con __ quer'd the pow'r of the grave
-  He has ris -- en in his glo -- ry, his glo -- ry to 
+  He has ris -- en in his glo -- ry, his glo -- ry to
   save He has con __ quer'd the pow'r of the grave
   in his glo -- ry his glo -- ry to save, ris -- en __
   has ris -- en in his glo ry to save.
@@ -819,18 +922,18 @@ verseTenorTwo = \lyricmode {
   O re -- joice in the Lord
   in the Lord
   O __ re -- joice in the Lord in the Lord in the Lord __
-  He has a -- ris -- en in glo -- ry to 
-  save to save ah! __ in his glo -- ry to save 
+  He has a -- ris -- en in glo -- ry to
+  save to save ah! __ in his glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord
-  O re -- joice in the Lord 
+  O re -- joice in the Lord
   O sing prai -- ses to Him
   O re -- joice in the Lord in the Lord __ the Lord __
 }
 
 verseBassOne = \lyricmode {
   % Lyrics follow here.
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en __ in his glo -- ry to save __
@@ -839,15 +942,15 @@ verseBassOne = \lyricmode {
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo -- ry to save. __
   in his glo --ry to save __
-  He has ris -- en has ris -- en ris -- en 
-  has ris -- en in glo -- ry, in glo -- ry, 
+  He has ris -- en has ris -- en ris -- en
+  has ris -- en in glo -- ry, in glo -- ry,
   in glo -- ry, \skip8 to save in His glo -- ry to save.
   O re -- joice __ O re -- joice re -- joice that
   the Lord has a -- ris -- sen a -- ris -- en in
-  glo -- ry to save, ris -- en __ has 
+  glo -- ry to save, ris -- en __ has
   ris -- en in glo -- ry to save
   O re -- joice in the Lord:
-  O re -- joice in the Lord O re -- joice in the Lord 
+  O re -- joice in the Lord O re -- joice in the Lord
   O re -- joice re -- joice __ re -- joice that the Lord
   has a -- ris -- en
   in the Lord He has a -- ris -- en in his glo -- ry in his glo -- ry
@@ -862,7 +965,7 @@ verseBassOne = \lyricmode {
 
 verseBassTwo = \lyricmode {
   % Lyrics follow here.
-  joice that the Lord has a -- ris -- en 
+  joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en __ in his glo -- ry to save __
@@ -871,15 +974,15 @@ verseBassTwo = \lyricmode {
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo -- ry to save. __
   in his glo --ry to save __
-  He has ris -- en has ris -- en ris -- en 
-  has ris -- en in glo -- ry, in glo -- ry, 
+  He has ris -- en has ris -- en ris -- en
+  has ris -- en in glo -- ry, in glo -- ry,
   in glo -- ry, \skip8 to save in His glo -- ry to save.
   O re -- joice __ O re -- joice re -- joice that
   the Lord has a -- ris -- sen a -- ris -- en in
-  glo -- ry to save, ris -- en __ has 
+  glo -- ry to save, ris -- en __ has
   ris -- en in glo -- ry to save
   O re -- joice in the Lord:
-  O re -- joice in the Lord O re -- joice in the Lord 
+  O re -- joice in the Lord O re -- joice in the Lord
   O re -- joice re -- joice __ re -- joice that the Lord
   has a -- ris -- en
   in the Lord He has a -- ris -- en in his glo -- ry in his glo -- ry
@@ -888,7 +991,7 @@ verseBassTwo = \lyricmode {
   O re -- joice in the Lord
   O re -- joice in the Lord __
   O re -- joice in the Lord __
-  in the Lord __ in the Lord __ 
+  in the Lord __ in the Lord __
   in the Lord __ the Lord __
 }
 
@@ -919,68 +1022,72 @@ rehearsalMidi = #
 
 \score {
   <<
+    \new Staff \with {
+      midiInstrument = "choir aahs"
+      instrumentName = "Santuzza"
+      shortInstrumentName = "San."
+    } \new Voice = "santuzza" \santuzza
+    \new Lyrics \with {
+      \override VerticalAxisGroup #'staff-affinity = #CENTER
+    } \lyricsto "santuzza" \verseSantuzza
     \new ChoirStaff <<
-%       \new Staff \with {
-%         midiInstrument = "choir aahs"
-%         instrumentName = "Soprano I"
-%       } %\new Voice = "soprano1" \sopranoOne
-%       \new Lyrics \with {
-%         \override VerticalAxisGroup #'staff-affinity = #CENTER
-%       } \lyricsto "soprano1" \verseSopranoOne
+      \new Staff \with {
+        midiInstrument = "choir aahs"
+        instrumentName = "Soprano I"
+        shortInstrumentName = "S1"
+      } \new Voice = "soprano1" \sopranoOne
+      \new Lyrics \with {
+        \override VerticalAxisGroup #'staff-affinity = #CENTER
+      } \lyricsto "soprano1" \verseSopranoOne
 %       \new Staff \with {
 %         midiInstrument = "choir aahs"
 %         instrumentName = "Soprano II"
+%         shortInstrumentName = "S2"
 %       } \new Voice = "soprano2" \sopranoTwo
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "soprano2" \verseSopranoTwo
-      % \new Staff \with {
+%       \new Lyrics \with {
+%         \override VerticalAxisGroup #'staff-affinity = #CENTER
+%       } \lyricsto "soprano2" \verseSopranoTwo
+%       \new Staff \with {
 %         midiInstrument = "choir aahs"
 %         instrumentName = "Alto"
+%         shortInstrumentName = "A"
 %       } \new Voice = "alto" \alto
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "alto" \verseAlto
-      \new Staff \with {
-        midiInstrument = "choir aahs"
-        instrumentName = "Tenor I"
-      } {
-        \clef "treble_8"
-        %\new Voice = "tenor1" \tenorOne
-      }
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "tenor1" \verseTenorOne
-      \new Staff \with {
-        midiInstrument = "choir aahs"
-        instrumentName = "Tenor II"
-      } {
-        \clef "treble_8"
-        %\new Voice = "tenor2" \tenorTwo
-      }
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "tenor2" \verseTenorTwo
-      \new Staff \with {
-        midiInstrument = "choir aahs"
-        instrumentName = "Bass I"
-      } {
-        \clef bass
-        \new Voice = "bass1" \bassOne
-      }
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "bass1" \verseBassOne
-      % \new Staff \with {
-      %         midiInstrument = "choir aahs"
-      %         instrumentName = "Bass II"
-      %       } {
-      %         \clef bass
-      %         \new Voice = "bass2" \bassTwo
-      %       }
-      %       \new Lyrics \with {
-      %         \override VerticalAxisGroup #'staff-affinity = #CENTER
-      %       } \lyricsto "bass2" \verseBassTwo
+%       \new Lyrics \with {
+%         \override VerticalAxisGroup #'staff-affinity = #CENTER
+%       } \lyricsto "alto" \verseAlto
+%       \new Staff \with {
+%         midiInstrument = "choir aahs"
+%         instrumentName = "Tenor I"
+%         shortInstrumentName = "T1"
+%       } {
+%         \clef "treble_8"
+%         \new Voice = "tenor1" \tenorOne
+%       }
+%       \new Lyrics \with {
+%         \override VerticalAxisGroup #'staff-affinity = #CENTER
+%       } \lyricsto "tenor1" \verseTenorOne
+%       \new Staff \with {
+%         midiInstrument = "choir aahs"
+%         instrumentName = "Tenor II"
+%         shortInstrumentName = "T2"
+%       } {
+%         \clef "treble_8"
+%         \new Voice = "tenor2" \tenorTwo
+%       }
+%       \new Lyrics \with {
+%         \override VerticalAxisGroup #'staff-affinity = #CENTER
+%       } \lyricsto "tenor2" \verseTenorTwo
+%       \new Staff \with {
+%         midiInstrument = "choir aahs"
+%         instrumentName = "Bass"
+%         shortInstrumentName = "B"
+%       } {
+%         \clef bass
+%         \new Voice = "bass1" \bassOne
+%       }
+%       \new Lyrics \with {
+%         \override VerticalAxisGroup #'staff-affinity = #CENTER
+%       } \lyricsto "bass1" \verseBassOne
     >>
     %\pianoReduction
   >>
@@ -991,51 +1098,51 @@ rehearsalMidi = #
 }
 
 % Rehearsal MIDI files:
-\book {
-  \bookOutputSuffix "soprano1"
-  \score {
-    \rehearsalMidi "soprano1" "soprano sax" \verse
-    %\midi { }
-  }
-}
-
-\book {
-  \bookOutputSuffix "soprano2"
-  \score {
-    \rehearsalMidi "soprano2" "soprano sax" \verse
-    %\midi { }
-  }
-}
-
-\book {
-  \bookOutputSuffix "alto"
-  \score {
-    \rehearsalMidi "alto" "soprano sax" \verse
-    %\midi { }
-  }
-}
-
-\book {
-  \bookOutputSuffix "tenor1"
-  \score {
-    \rehearsalMidi "tenor1" "tenor sax" \verse
-    %\midi { }
-  }
-}
-
-\book {
-  \bookOutputSuffix "tenor2"
-  \score {
-    \rehearsalMidi "tenor2" "tenor sax" \verse
-    %\midi { }
-  }
-}
-
-\book {
-  \bookOutputSuffix "bass"
-  \score {
-    \rehearsalMidi "bass" "tenor sax" \verse
-    %\midi { }
-  }
-}
-
+% \book {
+%   \bookOutputSuffix "soprano1"
+%   \score {
+%     \rehearsalMidi "soprano1" "soprano sax" \verse
+%     %\midi { }
+%   }
+% }
+%
+% \book {
+%   \bookOutputSuffix "soprano2"
+%   \score {
+%     \rehearsalMidi "soprano2" "soprano sax" \verse
+%     %\midi { }
+%   }
+% }
+%
+% \book {
+%   \bookOutputSuffix "alto"
+%   \score {
+%     \rehearsalMidi "alto" "soprano sax" \verse
+%     %\midi { }
+%   }
+% }
+%
+% \book {
+%   \bookOutputSuffix "tenor1"
+%   \score {
+%     \rehearsalMidi "tenor1" "tenor sax" \verse
+%     %\midi { }
+%   }
+% }
+%
+% \book {
+%   \bookOutputSuffix "tenor2"
+%   \score {
+%     \rehearsalMidi "tenor2" "tenor sax" \verse
+%     %\midi { }
+%   }
+% }
+%
+% \book {
+%   \bookOutputSuffix "bass"
+%   \score {
+%     \rehearsalMidi "bass" "tenor sax" \verse
+%     %\midi { }
+%   }
+% }
+%
