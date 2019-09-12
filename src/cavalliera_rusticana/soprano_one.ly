@@ -1,7 +1,11 @@
-sopranoOne = \relative c'' {
+sopranoOne = \relative c' {
   \global
   % Music follows here.
-  d4. d4 d8 e4. e4 e8 |
+  r2. e2^\p e4 |
+  
+  \bar "||"
+  \time 12/8
+  d'4. d4 d8 e4. e4 e8 |
   b2. b4. b4 b8 |
   c4. c4 c8 d4. d4 d8 |
   a2.~ a4. a4 a8 |
@@ -92,7 +96,7 @@ sopranoOne = \relative c'' {
 }
 
 verseSopranoOne = \lyricmode {
-  joice that the Lord has a -- ris -- en
+  O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo __ ry __ to save __

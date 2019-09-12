@@ -17,7 +17,7 @@ global = {
 \include "bass_one.ly"
 \include "bass_two.ly"
 
-\include "rehearsal_midi.ly"
+%\include "rehearsal_midi.ly"
 
 \score {
   <<
@@ -97,8 +97,8 @@ global = {
       } \lyricsto "bass1" \verseBassOne
     >>
   >>
-  %\layout { }
-  \midi {
-    \tempo 4=100
-  }
+  \layout { }
+  % \midi {
+%     \tempo 4=100
+%   }
 }

@@ -1,7 +1,7 @@
 santuzza = \relative c' {
   \global
   % Music follows here.
-  R1. * 16
+  R1. * 17
 
   \bar "||"
   \time 4/4

@@ -1,6 +1,7 @@
-alto = \relative c'' {
+alto = \relative c' {
   \global
   % Music follows here.
+  r2. d2^\p d4 |
   g4. g4 g8 g4. g4 g8 |
   fs2. fs4. fs4 fs8 |
   f4. f4 f8 f4. f4 f8 |
@@ -90,7 +91,7 @@ alto = \relative c'' {
 }
 
 verseAlto = \lyricmode {
-  joice that the Lord has a -- ris -- en
+  O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in his glo -- ry to save

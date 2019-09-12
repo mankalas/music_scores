@@ -1,8 +1,8 @@
-bassOne = \relative c' {
+bassOne = \relative c {
   \global
   % Music follows here.
-
-  b4. b4 b8 g4. g4 g8 |
+  r2. d2^\p d4 |
+  b'4. b4 b8 g4. g4 g8 |
   d'2. d4. d4 d8 |
   a4. a4 a8 f4. f4 f8 |
   c'2.~ c4. c4 c8 |
@@ -111,7 +111,7 @@ bassOne = \relative c' {
 
 verseBassOne = \lyricmode {
   % Lyrics follow here.
-  joice that the Lord has a -- ris -- en
+  O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en __ in his glo -- ry to save __

@@ -1,7 +1,8 @@
-tenorTwo = \relative c' {
+tenorTwo = \relative c {
   \global
   % Music follows here.
-  d4. d4 d8 b4. b4 b8 |
+  r2. d2^\p d4 |
+  d'4. d4 d8 b4. b4 b8 |
   fs'2. fs4. d4 d8 |
   c4. c4 c8 a4. a4 a8 |
   e'2.~ e4. e4 e8 |
@@ -92,7 +93,7 @@ tenorTwo = \relative c' {
 }
 
 verseTenorTwo = \lyricmode {
-  joice that the Lord has a -- ris -- en
+  O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in his glo -- ry to save
