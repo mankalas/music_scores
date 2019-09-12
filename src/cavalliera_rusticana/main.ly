@@ -21,24 +21,24 @@ global = {
 
 \score {
   <<
-    \new StaffGroup <<
-      \new Staff \with {
-        midiInstrument = "choir aahs"
-        instrumentName = "Santuzza"
-        shortInstrumentName = "San."
-      } \new Voice = "santuzza" \santuzza
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "santuzza" \verseSantuzza
-      \new Staff \with {
-        midiInstrument = "choir aahs"
-        instrumentName = "Lucia"
-        shortInstrumentName = "Lu."
-      } \new Voice = "lucia" \lucia
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "lucia" \verseLucia
-    >>
+    
+    \new Staff \with {
+      midiInstrument = "choir aahs"
+      instrumentName = "Santuzza"
+      shortInstrumentName = "Sa."
+    } \new Voice = "santuzza" \santuzza
+    \new Lyrics \with {
+      \override VerticalAxisGroup #'staff-affinity = #CENTER
+    } \lyricsto "santuzza" \verseSantuzza
+    \new Staff \with {
+      midiInstrument = "choir aahs"
+      instrumentName = "Lucia"
+      shortInstrumentName = "Lu."
+    } \new Voice = "lucia" \lucia
+    \new Lyrics \with {
+      \override VerticalAxisGroup #'staff-affinity = #CENTER
+    } \lyricsto "lucia" \verseLucia
+   
     \new ChoirStaff <<
       \new Staff \with {
         midiInstrument = "choir aahs"
@@ -102,7 +102,7 @@ global = {
 
   \layout {
     \context {
-      \StaffGroup
+      \Staff
       \RemoveEmptyStaves
     }
     \context {
