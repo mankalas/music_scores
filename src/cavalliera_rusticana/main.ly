@@ -14,8 +14,7 @@ global = {
 % \include "alto.ly"
 % \include "tenor_one.ly"
 % \include "tenor_two.ly"
-\include "bass_one.ly"
-\include "bass_two.ly"
+\include "bass.ly"
 
 %\include "rehearsal_midi.ly"
 
@@ -86,25 +85,25 @@ global = {
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "tenor2" \verseTenorTwo
+      \new Lyrics = "bassUpperLyrics" \with { 
+        alignAboveContext = "staff" 
+        \override VerticalAxisGroup.staff-affinity = #DOWN
+      }
       \new Staff \with {
         midiInstrument = "choir aahs"
         instrumentName = "Bass"
         shortInstrumentName = "B"
       } {
         \clef bass
-        
-          \partcombineChords
-          \new Voice = "bass1" { \voiceOne \bassOne } \\
-          \new Voice = "bass2" { \voiceTwo \bassTwo }
-        
+        \new Voice = "bass" \bass
       }
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
-        \override VerticalAxisGroup.staff-affinity = #DOWN
-      } \lyricsto "bass1" \verseBassOne
-      \new Lyrics \with {
-        \override VerticalAxisGroup #'staff-affinity = #CENTER
-      } \lyricsto "bass2" \verseBassTwo
+      } \lyricsto "bass" \verseBass
+      \context Lyrics = "bassUpperLyrics" {
+        \lyricsto "bassUpper" \verseBassUpper
+      }
+      
     >>
   >>
 
