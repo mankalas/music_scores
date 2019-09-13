@@ -8,7 +8,7 @@ rehearsalMidi = #
      \new Staff = "alto" \new Voice = "alto" { \alto }
      \new Staff = "tenor1" \new Voice = "tenor1" { \tenorOne }
      \new Staff = "tenor2" \new Voice = "tenor2" { \tenorTwo }
-     \new Staff = "bass" \new Voice = "bass" { \bassOne }
+     \new Staff = "bass" \new Voice = "bass" { \bass }
      \context Staff = $name {
        \set Score.midiMinimumVolume = #0.5
        \set Score.midiMaximumVolume = #0.5
@@ -67,15 +67,7 @@ rehearsalMidi = #
  \book {
    \bookOutputSuffix "bass"
    \score {
-     \rehearsalMidi "bass" "tenor sax" \verseBassOne
-     \midi { }
-   }
- }
-
- \book {
-   \bookOutputSuffix "bass2"
-   \score {
-     \rehearsalMidi "bass2" "tenor sax" \verseBassTwo
+     \rehearsalMidi "bass" "tenor sax" \verseBass
      \midi { }
    }
  }
