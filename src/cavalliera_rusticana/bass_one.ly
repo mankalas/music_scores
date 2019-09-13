@@ -81,7 +81,7 @@ bassOne = \relative c {
   d4. d4 d8 d2. |
   c4. c4 c8 c2. |
   d8 <<
-    \new Voice = "bass1part1" {
+    {
       \voiceOne
       r4 r4 r4 fs8 fs fs fs fs |
       g4 r8 r4 r8 r8 g g g g g |
@@ -89,7 +89,7 @@ bassOne = \relative c {
       a4 r8 r gs gs a4 r8 r gs gs |
       a8
     }
-    \new Voice = "bass1" {
+    \new Voice = "bass2" {
       \voiceTwo {
         d,8 d d d d d2.~ |
         d8 d d d d d d2.~ |
@@ -114,12 +114,12 @@ verseBassOne = \lyricmode {
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
-  He has ris -- en __ in his glo -- ry to save __
+  He has ris -- en __ in His glo -- ry to save __
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo -- ry to save. __
-  in his glo --ry to save __
+  in His glo -- ry to save __
   He has ris -- en has ris -- en ris -- en
   has ris -- en in glo -- ry, in glo -- ry,
   in glo -- ry, \skip8 to save in His glo -- ry to save.
@@ -127,16 +127,16 @@ verseBassOne = \lyricmode {
   the Lord has a -- ris -- sen a -- ris -- en in
   glo -- ry to save, ris -- en __ has
   ris -- en in glo -- ry to save
-  O re -- joice in the Lord:
+  O re -- joice in the Lord
   O re -- joice in the Lord O re -- joice in the Lord
   O re -- joice re -- joice __ re -- joice that the Lord
   has a -- ris -- en
-  in the Lord He has a -- ris -- en in his glo -- ry in his glo -- ry
-  save to save ah! __ in his glo -- ry to save.
+  in __ the Lord He has a -- ris -- en in His glo -- ry in His glo -- ry
+  save to save ah! __ in His glo -- ry to save.
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord
   O re -- joice in the Lord __
-  O sing prai -- ses to Him
+  O sing prai -- ses to Him,
   O re -- joice in the Lord
   in the Lord __ the Lord __
 }

@@ -96,12 +96,12 @@ verseBassTwo = \lyricmode {
   joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
-  He has ris -- en __ in his glo -- ry to save __
+  He has ris -- en __ in His glo -- ry to save __
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo -- ry to save. __
-  in his glo --ry to save __
+  in His glo --ry to save __
   He has ris -- en has ris -- en ris -- en
   has ris -- en in glo -- ry, in glo -- ry,
   in glo -- ry, \skip8 to save in His glo -- ry to save.
@@ -113,8 +113,8 @@ verseBassTwo = \lyricmode {
   O re -- joice in the Lord O re -- joice in the Lord
   O re -- joice re -- joice __ re -- joice that the Lord
   has a -- ris -- en
-  in the Lord He has a -- ris -- en in his glo -- ry in his glo -- ry
-  save to save ah! __ in his glo -- ry to save.
+  in the Lord He has a -- ris -- en in His glo -- ry in His glo -- ry
+  save to save ah! __ in His glo -- ry to save.
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord
   O re -- joice in the Lord __

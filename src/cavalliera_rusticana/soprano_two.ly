@@ -98,20 +98,20 @@ verseSopranoTwo = \lyricmode {
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
-  He has ris -- en in his glo __ ry to save. __
-  in his glo -- ry to save __
-  a -- ris __ \skip8 en
-  in His glo __ \skip8 ry to save __ in His glo -- ry to save
-  O re -- joice __ that the Lord has a -- ris -- en a -- ris __ en in
-  glo __ ry to save, ris -- en __ has
-  ris __ en in His glo __ ry to save
+  He has ris -- en in His glo -- ry to save. __
+  in His glo -- ry to save __
+  a -- ris -- \skip8 en
+  in His glo -- \skip8 ry to save __ in His glo -- ry to save
+  O re -- joice __ that the Lord has a -- ris -- en a -- ris -- en in
+  glo -- ry to save, ris -- en __ has
+  ris __ en in His glo -- ry to save
   O re -- joice in the Lord
   O re -- joice in the Lord!
   O re -- joice in the Lord
-  O re -- joice __ that the Lord has a -- ris __ \skip8 en
-  O re -- joice __ that the Lord has a -- ris __ en
+  O re -- joice __ that the Lord has a -- ris -- \skip8 en
+  O re -- joice __ that the Lord has a -- ris -- en
   He has a -- ris -- en in glo -- ry
-  in the Lord He has a -- ris -- en in glo -- ry to save
+  in the Lord __ He has a -- ris -- en in glo -- ry to save
   ah! __ in His glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord

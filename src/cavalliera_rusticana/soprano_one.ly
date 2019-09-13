@@ -1,8 +1,8 @@
 sopranoOne = \relative c' {
   \global
   % Music follows here.
-  r2. e2^\p e4 |
-  
+  r2. d2^\p d4 |
+
   \bar "||"
   \time 12/8
   d'4. d4 d8 e4. e4 e8 |
@@ -104,17 +104,17 @@ verseSopranoOne = \lyricmode {
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo __ \skip8 \skip8 ry __ to save. __
-  in his glo -- ry to save __
+  in His glo -- ry to save __
   O re -- joice  __ that the Lord has a -- ris -- en
-  a -- ris __ en
-  in __ His glo __ ry to save __ in His glo -- ry to save
+  a -- ris -- en
+  in __ His glo -- ry to save __ in His glo -- ry to save
   O re -- joice  __ that the Lord has a -- ris -- en
-  a -- ris __ en in glo __ ry to
+  a -- ris -- en in glo -- ry to
   save, ris -- en __ has
-  ris -- en in his glo -- ry to save
+  ris -- en in His glo -- ry to save
   O re -- joice in the Lord
-  O re -- joice __ in the Lord in the Lord
-  in __ the Lord O re -- joice __ that the Lord has a -- ris -- \skip8 en
+  O re -- joice in the Lord in the Lord
+  in the Lord O re -- joice __ that the Lord has a -- ris -- \skip8 en
   O re -- joice __ that the Lord has a -- ris -- en
   He has a -- ris -- en in glo -- ry
   in His glo -- ry to save

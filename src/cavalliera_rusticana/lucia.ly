@@ -72,7 +72,7 @@ lucia = \relative c' {
 }
 
 verseLucia = \lyricmode {
- in His glo -- ry to save __ O re -- joice
+ in His glo -- ry to save __ O re -- joice __
  that the Lord has a -- ris -- en
  He has burst thro' the gates of His pri -- son,
  has ris -- en in glo -- ry to save __

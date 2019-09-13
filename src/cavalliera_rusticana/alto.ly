@@ -94,21 +94,21 @@ verseAlto = \lyricmode {
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
-  He has ris -- en in his glo -- ry to save
+  He has ris -- en in His glo -- ry to save __
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
-  He has ris -- en in his glo __ ry to save. __
-  in his glo -- ry to save __
+  He has ris -- en in His glo -- ry to save. __
+  in His glo -- ry to save __
   O re -- joice  __ that the Lord has a -- ris -- en
-  He has burst thro' the gates of his pri -- son, has
+  He has burst thro' the gates of His pri -- son, has
   ris -- en in glo -- ry to save __
   O re -- joice  __ that the Lord is a -- ris -- en
   in His glo -- ry His
   glo -- ry to save, ris -- en __ has
-  ris -- en in his glo -- ry to save
+  ris -- en in His glo -- ry to save
   O re -- joice in the Lord
-  O re -- joice __ in the Lord in the Lord
+  O re -- joice in the Lord in the Lord
   in __ the Lord in the Lord
   in __ the Lord in the Lord __ in the Lord __
   to save ah! __ in His glo -- ry to save

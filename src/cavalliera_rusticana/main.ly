@@ -7,13 +7,13 @@ global = {
   \tempo "L'istesso tempo" 4=60
 }
 
-\include "santuzza.ly"
-\include "lucia.ly"
-\include "soprano_one.ly"
-\include "soprano_two.ly"
-\include "alto.ly"
-\include "tenor_one.ly"
-\include "tenor_two.ly"
+% \include "santuzza.ly"
+% \include "lucia.ly"
+% \include "soprano_one.ly"
+% \include "soprano_two.ly"
+% \include "alto.ly"
+% \include "tenor_one.ly"
+% \include "tenor_two.ly"
 \include "bass_one.ly"
 \include "bass_two.ly"
 
@@ -21,7 +21,7 @@ global = {
 
 \score {
   <<
-    
+
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = "Santuzza"
@@ -38,7 +38,7 @@ global = {
     \new Lyrics \with {
       \override VerticalAxisGroup #'staff-affinity = #CENTER
     } \lyricsto "lucia" \verseLucia
-   
+
     \new ChoirStaff <<
       \new Staff \with {
         midiInstrument = "choir aahs"
@@ -92,11 +92,19 @@ global = {
         shortInstrumentName = "B"
       } {
         \clef bass
-        \new Voice = "bass1" \bassOne
+        
+          \partcombineChords
+          \new Voice = "bass1" { \voiceOne \bassOne } \\
+          \new Voice = "bass2" { \voiceTwo \bassTwo }
+        
       }
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
+        \override VerticalAxisGroup.staff-affinity = #DOWN
       } \lyricsto "bass1" \verseBassOne
+      \new Lyrics \with {
+        \override VerticalAxisGroup #'staff-affinity = #CENTER
+      } \lyricsto "bass2" \verseBassTwo
     >>
   >>
 

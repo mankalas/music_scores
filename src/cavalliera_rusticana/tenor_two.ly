@@ -96,17 +96,17 @@ verseTenorTwo = \lyricmode {
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
-  He has ris -- en in his glo -- ry to save
+  He has ris -- en in His glo -- ry to save __
   O re -- joice that the Lord has a -- ris -- en
   He has con -- quer'd the pow'r of the grave __
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo -- ry to save. __
-  in his glo -- ry to save __
+  in His glo -- ry to save __
   He has con __ quer'd the pow'r of the grave
-  He has ris -- en in his glo -- ry, his glo -- ry to
-  save He has con __ quer'd the pow'r of the grave
-  in his glo -- ry his glo -- ry to save, ris -- en __
-  has ris -- en in his glo ry to save.
+  He has ris -- en in His glo -- ry, His glo -- ry to
+  save He has con -- quer'd the pow'r of the grave
+  in His glo -- ry His glo -- ry to save, ris -- en __
+  has ris -- en in His glo -- ry to save.
   O re -- joice in the Lord
   O re -- joice in the Lord
   O re -- joice in the Lord!
@@ -114,10 +114,10 @@ verseTenorTwo = \lyricmode {
   in the Lord
   O __ re -- joice in the Lord in the Lord in the Lord __
   He has a -- ris -- en in glo -- ry to
-  save to save ah! __ in his glo -- ry to save
+  save to save ah! __ in His glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!
   O re -- joice in the Lord
   O re -- joice in the Lord
-  O sing prai -- ses to Him
+  O sing prai -- ses to Him,
   O re -- joice in the Lord in the Lord __ the Lord __
 }

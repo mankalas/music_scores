@@ -89,16 +89,16 @@ verseSantuzza = \lyricmode {
 
   O re -- joice __ that the Lord has a -- ris -- en,
   a -- ris -- \skip8 \skip8 en
-  ris -- en in glo __ ry to save __ in His glo -- ry to
+  ris -- en in glo -- ry to save __ in His glo -- ry to
   save O re -- joice __ that the Lord has a -- ris -- en
   a -- ris -- en in glo -- ry to save,
   ris -- en __ has
   ris -- en in His glo -- ry to save
-  O re -- joice __ that the Lord has a -- ris -- \skip8 en,
-  O re -- joice __ that the Lord has a -- ris -- en,
+  O re -- joice __ that the Lord has a -- ris -- \skip8 en
+  O re -- joice __ that the Lord has a -- ris -- en
   He has a -- ris -- en in glo -- ry, in His glo -- ry to save
   He has a -- ris -- en in glo -- ry to save
-  ah! __ in his glo -- ry to save
+  ah! __ in His glo -- ry to save
   O re -- joice __ in the Lord __ O re -- joice
   in the Lord __ the Lord __
 }
