@@ -7,13 +7,13 @@ global = {
   \tempo "L'istesso tempo" 4=60
 }
 
-% \include "santuzza.ly"
-% \include "lucia.ly"
-% \include "soprano_one.ly"
-% \include "soprano_two.ly"
-% \include "alto.ly"
-% \include "tenor_one.ly"
-% \include "tenor_two.ly"
+\include "santuzza.ly"
+\include "lucia.ly"
+\include "soprano_one.ly"
+\include "soprano_two.ly"
+\include "alto.ly"
+\include "tenor_one.ly"
+\include "tenor_two.ly"
 \include "bass.ly"
 
 %\include "rehearsal_midi.ly"
@@ -111,10 +111,12 @@ global = {
     \context {
       \Staff
       \RemoveEmptyStaves
+      \autoBeamOff
     }
     \context {
       \ChoirStaff
       \RemoveEmptyStaves
+      \autoBeamOff
     }
   }
   % \midi {
