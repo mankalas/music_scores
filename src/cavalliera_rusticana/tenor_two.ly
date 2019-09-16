@@ -102,9 +102,9 @@ verseTenorTwo = \lyricmode {
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo -- ry to save. __
   in His glo -- ry to save __
-  He has con __ quer'd the pow'r of the grave
+  He has con __ quer'd the pow'r of the grave __
   He has ris -- en in His glo -- ry, His glo -- ry to
-  save He has con -- quer'd the pow'r of the grave
+  save He has con -- quer'd the pow'r of the grave __
   in His glo -- ry His glo -- ry to save, ris -- en __
   has ris -- en in His glo -- ry to save.
   O re -- joice in the Lord
@@ -112,7 +112,7 @@ verseTenorTwo = \lyricmode {
   O re -- joice in the Lord!
   O re -- joice in the Lord
   in the Lord
-  O __ re -- joice in the Lord in the Lord in the Lord __
+  O __ re -- joice in the Lord in __ the Lord in the Lord __
   He has a -- ris -- en in glo -- ry to
   save to save ah! __ in His glo -- ry to save
   Al -- le -- lu -- ja al -- le -- lu -- ja al -- le -- lu -- ja!

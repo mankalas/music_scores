@@ -116,7 +116,7 @@ bass = \relative c {
 verseBassUpper = \lyricmode {
  O re -- joice in the Lord   
  O re -- joice in the Lord   
- O sing prai -- ses to Him
+ O sing prai -- ses to Him,
  O re -- joice in the Lord
 }
 

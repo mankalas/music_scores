@@ -77,7 +77,7 @@ verseLucia = \lyricmode {
  He has burst thro' the gates of His pri -- son,
  has ris -- en in glo -- ry to save __
  O re -- joice __ that the Lord is a -- ris -- en
- in His glo -- ry Hi glo -- ry to save,
+ in His glo -- ry His glo -- ry to save,
  ris -- en __ has ris -- en in His glo -- ry to save
  O re -- joice __ that the Lord has a -- ris -- \skip8 en
  O re -- joice __ that the Lord has a -- ris -- en

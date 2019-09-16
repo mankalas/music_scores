@@ -103,7 +103,7 @@ verseTenorOne = \lyricmode {
   He has bro -- ken the gates of the pri -- son,
   He has ris -- en in glo __ ry __ to save. __
   in His glo -- ry to save __
-  He has con __ quer'd the pow'r of the grave
+  He has con __ quer'd the pow'r of the grave __
   He has a -- ris -- en in __ His glo -- ry to save __
   in His glo -- ry to save
   He has con -- quer'd the pow'r of the grave __
