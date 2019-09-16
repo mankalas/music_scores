@@ -5,6 +5,7 @@ global = {
   \key g \major
   \time 12/8
   \tempo "L'istesso tempo" 4=60
+  \set Score.markFormatter = #format-mark-numbers
 }
 
 \include "santuzza.ly"
@@ -20,7 +21,6 @@ global = {
 
 \score {
   <<
-
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = "Santuzza"
@@ -112,6 +112,7 @@ global = {
       \Staff
       \RemoveEmptyStaves
       \autoBeamOff
+      \omit BarNumber
     }
     \context {
       \ChoirStaff
