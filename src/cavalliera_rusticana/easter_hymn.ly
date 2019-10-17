@@ -1,5 +1,36 @@
 \version "2.18.2"
 \language "english"
+% first, define a variable to hold the formatted date:
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
+
+%% additional definitions required by the score:
+otherdynamics = #(make-dynamic-script "other-dynamics")
+
+\header {
+  encodingdate = \date
+  title = "Easter Hymn"
+  composer = "Pietro Mascagni"
+  piece = "Cavalleria Rusticana"
+}
+
+\paper {
+  oddHeaderMarkup = \markup {
+    \fill-line
+    {
+      \on-the-fly #not-first-page \fromproperty #'page:page-number-string
+      %% left
+      \on-the-fly #not-first-page \fontsize #-1 \bold \fromproperty #'header:title
+      %% center
+      ""
+      %% right
+    }
+  }
+
+  evenHeaderMarkup = \oddHeaderMarkup
+  oddFooterMarkup = \markup {}
+  evenFooterMarkup = \oddFooterMarkup
+
+}
 
 global = {
   \key g \major
@@ -17,7 +48,7 @@ global = {
 \include "tenor_two.ly"
 \include "bass.ly"
 
-%\include "rehearsal_midi.ly"
+\include "rehearsal_midi.ly"
 
 \score {
   <<
@@ -85,8 +116,8 @@ global = {
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "tenor2" \verseTenorTwo
-      \new Lyrics = "bassUpperLyrics" \with { 
-        alignAboveContext = "staff" 
+      \new Lyrics = "bassUpperLyrics" \with {
+        alignAboveContext = "staff"
         \override VerticalAxisGroup.staff-affinity = #DOWN
       }
       \new Staff \with {
@@ -103,7 +134,7 @@ global = {
       \context Lyrics = "bassUpperLyrics" {
         \lyricsto "bassUpper" \verseBassUpper
       }
-      
+
     >>
   >>
 
@@ -120,7 +151,7 @@ global = {
       \autoBeamOff
     }
   }
-  % \midi {
-  %     \tempo 4=100
-  %   }
+  \midi {
+    \tempo 4=100
+  }
 }
